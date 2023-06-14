@@ -1,7 +1,11 @@
 import React from 'react'
+import Typography from '@mui/material/Typography';
+import InputSearch from './components/InputSearch';
 
 export default function App() {
   return (
-    <div style={{ fontSize: 200 }}>Helloworld</div>
+    <div>
+      <InputSearch />
+    </div>
   )
 }

@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { purple } from '@mui/material/colors';
+import Typography from '@mui/material/Typography';
 
 const BootstrapButton = styled(Button)({
     boxShadow: 'none',
@@ -53,7 +54,7 @@ export default function CustomizedButtons() {
         <Stack spacing={2} direction="row">
             <ColorButton variant="contained">Custom CSS</ColorButton>
             <BootstrapButton variant="contained" disableRipple>
-                Bootstrap
+                <Typography variant='h1'>Helloworld</Typography>
             </BootstrapButton>
         </Stack>
     );
