@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme/theme';
-import DemoChoiChoi from './screens/DemoChoiChoi/DemoChoiChoi';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';

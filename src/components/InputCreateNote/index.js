@@ -9,10 +9,10 @@ export default function InputCreateNote() {
   return (
     <Paper
       component="form"
-      sx={{ p: '4px 16px', display: 'flex', alignItems: 'center', width: 750,boxShadow: '0px 4px 4px gray' }}
+      sx={{ p: '4px 16px', display: 'flex', alignItems: 'center', width: 750, boxShadow: '0px 4px 4px gray' }}
     >
       <InputBase
-        sx={{ ml: 1, flex: 1 }}
+        sx={{ ml: 1, flex: 1, backgroundColor: 'yellow' }}
         placeholder="Tạo ghi chú..."
         inputProps={{ 'aria-label': 'tao ghi chu' }}
       />
