@@ -5,6 +5,8 @@ import IconButton from '@mui/material/IconButton';
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 import BrushOutlinedIcon from '@mui/icons-material/BrushOutlined';
 import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
+
+// import {CheckBoxOutlinedIcon, BrushOutlinedIcon, ImageOutlinedIcon
 export default function InputCreateNote() {
   return (
     <Paper
