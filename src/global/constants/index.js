@@ -3,3 +3,10 @@ export const font_weight = {
     medium: 500,
     bold: 700,
 }
+
+export const ROUTES = {
+    notes: '/',
+    archives: '/archives',
+    deletes: '/deletes',
+    hello: '/hello',
+}

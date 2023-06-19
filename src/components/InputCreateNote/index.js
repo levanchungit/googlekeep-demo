@@ -14,7 +14,7 @@ export default function InputCreateNote() {
       sx={{ p: '4px 16px', display: 'flex', alignItems: 'center', width: 750, boxShadow: '0px 4px 4px gray' }}
     >
       <InputBase
-        sx={{ ml: 1, flex: 1, backgroundColor: 'yellow' }}
+        sx={{ ml: 1, flex: 1 }}
         placeholder="Tạo ghi chú..."
         inputProps={{ 'aria-label': 'tao ghi chu' }}
       />
