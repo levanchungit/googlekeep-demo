@@ -52,7 +52,6 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 function SwipeDrawer() {
-  const theme = useTheme();
   const [open, setOpen] = React.useState(true);
 
   const handleDrawer = () => {

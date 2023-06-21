@@ -1,7 +1,13 @@
 import React from 'react'
-import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, IconButton, Toolbar, Typography, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import ReplayIcon from '@mui/icons-material/Replay';
+import ViewAgendaOutlinedIcon from '@mui/icons-material/ViewAgendaOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
 import styled from '@emotion/styled';
+import InputSearch from '../InputSearch';
+
 
 const Header = styled(AppBar)`
   z-index: 1201;
@@ -14,6 +20,7 @@ const Heading = styled(Typography)`
   color: #5F6368;
   font-size: 24px;
   margin-left: 25px;
+  margin-right: 100px;
 `
 
 const HeaderBar = ({ open, handleDrawer }) => {
@@ -24,8 +31,28 @@ const HeaderBar = ({ open, handleDrawer }) => {
                 <IconButton onClick={() => handleDrawer()} sx={{ mr: 1 }}>
                     <MenuIcon />
                 </IconButton>
-                <img style={{ width: '35px' }} src={logo}></img>
+                <img style={{ width: '35px' }} src={logo} alt='logo'></img>
                 <Heading>Keep</Heading>
+                <InputSearch sx={{ p: 40 }}></InputSearch>
+                <Box sx = {{ml: 10}}>
+                    <IconButton sx={{ mr: 1 }}>
+                        <ReplayIcon sx={{ transform: 'scaleX(-1) rotate(-45deg)' }}/>
+                    </IconButton>
+                    <IconButton sx={{ mr: 1 }}>
+                        <ViewAgendaOutlinedIcon />
+                    </IconButton>
+                    <IconButton sx={{ mr: 1 }}>
+                        <SettingsOutlinedIcon />
+                    </IconButton>
+                </Box>
+                <Box sx = {{ml: 4, display: 'flex'}}>
+                    <IconButton sx={{ mr: 1 }}>
+                        <AppsOutlinedIcon />
+                    </IconButton>
+                    <Box sx = {{width: 40, height: 40, borderRadius: 20, backgroundColor: '#658864'}}>                           
+                    </Box>
+                </Box>
+                
             </Toolbar >
         </Header >
     )
