@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import Box from '@mui/material/Box';
+import InputCreateNote from '../InputCreateNote';
+import ContainerItem from '../ContainerItem';
+import { DataContext } from '../../provider/dataProvider';
 
-export default function index() {
+const Archives = () => {
+    const { notes, setNotes } = useContext(DataContext);
+
     return (
-        <div>Archives</div>
+        <Box sx={{ display: "flex", width: "100%", alignItems: 'center', justifyContent: 'center', marginTop: 13, flexDirection: 'column' }}>
+            <InputCreateNote check={"archives"} notes={notes} setNotes={setNotes}></InputCreateNote>
+            <ContainerItem check={"archives"} notes={notes} setNotes={setNotes}></ContainerItem>
+        </Box>
     )
 }
+
+export default Archives
+
+

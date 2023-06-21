@@ -34,25 +34,27 @@ const HeaderBar = ({ open, handleDrawer }) => {
                 <img style={{ width: '35px' }} src={logo} alt='logo'></img>
                 <Heading>Keep</Heading>
                 <InputSearch sx={{ p: 40 }}></InputSearch>
-                <Box sx = {{ml: 10}}>
-                    <IconButton sx={{ mr: 1 }}>
-                        <ReplayIcon sx={{ transform: 'scaleX(-1) rotate(-45deg)' }}/>
-                    </IconButton>
-                    <IconButton sx={{ mr: 1 }}>
-                        <ViewAgendaOutlinedIcon />
-                    </IconButton>
-                    <IconButton sx={{ mr: 1 }}>
-                        <SettingsOutlinedIcon />
-                    </IconButton>
-                </Box>
-                <Box sx = {{ml: 4, display: 'flex'}}>
-                    <IconButton sx={{ mr: 1 }}>
-                        <AppsOutlinedIcon />
-                    </IconButton>
-                    <Box sx = {{width: 40, height: 40, borderRadius: 20, backgroundColor: '#658864'}}>                           
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+                    <Box sx={{ display: 'flex', }}>
+                        <IconButton sx={{ mr: 1 }}>
+                            <ReplayIcon sx={{ transform: 'scaleX(-1) rotate(-45deg)' }} />
+                        </IconButton>
+                        <IconButton sx={{ mr: 1 }}>
+                            <ViewAgendaOutlinedIcon />
+                        </IconButton>
+                        <IconButton sx={{ mr: 1 }}>
+                            <SettingsOutlinedIcon />
+                        </IconButton>
+                    </Box>
+                    <Box sx={{ ml: 4, display: 'flex' }}>
+                        <IconButton sx={{ mr: 1 }}>
+                            <AppsOutlinedIcon />
+                        </IconButton>
+                        <Box sx={{ width: 40, height: 40, borderRadius: 20, backgroundColor: '#658864' }}>
+                        </Box>
                     </Box>
                 </Box>
-                
+
             </Toolbar >
         </Header >
     )

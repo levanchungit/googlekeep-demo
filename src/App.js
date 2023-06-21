@@ -8,20 +8,22 @@ import Archives from './components/archives';
 import Deletes from './components/deletes';
 import Hello from './components/Demo';
 import Box from '@mui/material/Box';
+import DataProvider from './provider/dataProvider';
 
 export default function App() {
   return (
     <Box style={{ display: "flex", width: "100%" }}>
-
-      <Router>
-        <SwipeDrawer />
-        <Routes>
-          <Route path="/" element={<Notes />} />
-          <Route path="/archives" element={<Archives />} />
-          <Route path="/deletes" element={<Deletes />} />
-          <Route path="/hello" element={<Hello />} />
-        </Routes>
-      </Router>
+      <DataProvider>
+        <Router>
+          <SwipeDrawer />
+          <Routes>
+            <Route path="/" element={<Notes />} />
+            <Route path="/archives" element={<Archives />} />
+            <Route path="/deletes" element={<Deletes />} />
+            <Route path="/hello" element={<Hello />} />
+          </Routes>
+        </Router>
+      </DataProvider>
     </Box>
   )
 }
